@@ -9,13 +9,13 @@
 	</parent>
 
 	<groupId>io.guise</groupId>
-	<artifactId>guise</artifactId>
-	<version>0.5.3</version>
+	<artifactId>guise-framework-bom</artifactId>
+	<version>0.6.0-SNAPSHOT</version>
 	<packaging>pom</packaging>
 
-	<name>Guise Ecosystem</name>
-	<description>Guise™ Internet application ecosystem and bill of materials.</description>
-	<url>https://guise.io/</url>
+	<name>Guise Framework BOM</name>
+	<description>Guise™ Internet application framework aggregate parent POM and bill of materials.</description>
+	<url>https://guise.io/framework/</url>
 	<inceptionYear>2005</inceptionYear>
 
 	<organization>
@@ -41,9 +41,9 @@
 	</licenses>
 
 	<scm>
-		<connection>scm:git:https://bitbucket.org/globalmentor/guise.git</connection>
-		<developerConnection>scm:git:https://bitbucket.org/globalmentor/guise.git</developerConnection>
-		<url>https://bitbucket.org/globalmentor/guise</url>
+		<connection>scm:git:https://bitbucket.org/globalmentor/guise-framework.git</connection>
+		<developerConnection>scm:git:https://bitbucket.org/globalmentor/guise-framework.git</developerConnection>
+		<url>https://bitbucket.org/globalmentor/guise-framework</url>
 	</scm>
 
 	<properties>
@@ -52,34 +52,12 @@
 	</properties>
 
 	<modules>
-		<module>cli</module>
 		<module>framework</module>
 		<module>framework-demo</module>
-		<module>mesh</module>
-		<module>mummy</module>
-		<module>tomcat</module>
 	</modules>
 
 	<dependencyManagement>
 		<dependencies>
-			<dependency>
-				<groupId>com.drewnoakes</groupId>
-				<artifactId>metadata-extractor</artifactId>
-				<version>2.16.0</version>
-			</dependency>
-
-			<dependency>
-				<groupId>com.globalmentor</groupId>
-				<artifactId>globalmentor-application</artifactId>
-				<version>0.7.7</version>
-			</dependency>
-
-			<dependency>
-				<groupId>com.globalmentor</groupId>
-				<artifactId>globalmentor-awt</artifactId>
-				<version>0.6.1</version>
-			</dependency>
-
 			<dependency>
 				<groupId>com.globalmentor</groupId>
 				<artifactId>globalmentor-core</artifactId>
@@ -145,12 +123,6 @@
 			</dependency>
 
 			<dependency>
-				<groupId>com.vladsch.flexmark</groupId>
-				<artifactId>flexmark-all</artifactId>
-				<version>0.50.50</version>
-			</dependency>
-
-			<dependency>
 				<groupId>io.clogr</groupId>
 				<artifactId>clogr-bom</artifactId>
 				<version>0.8.3</version>
@@ -168,50 +140,14 @@
 
 			<dependency>
 				<groupId>io.guise</groupId>
-				<artifactId>guise-cli</artifactId>
-				<version>0.5.3</version>
-			</dependency>
-
-			<dependency>
-				<groupId>io.guise</groupId>
 				<artifactId>guise-framework</artifactId>
-				<version>0.5.3</version>
+				<version>0.6.0-SNAPSHOT</version>
 			</dependency>
 
 			<dependency>
 				<groupId>io.guise</groupId>
 				<artifactId>guise-framework-demo</artifactId>
-				<version>0.5.3</version>
-			</dependency>
-
-			<dependency>
-				<groupId>io.guise</groupId>
-				<artifactId>guise-mesh</artifactId>
-				<version>0.5.3</version>
-			</dependency>
-
-			<dependency>
-				<groupId>io.guise</groupId>
-				<artifactId>guise-mummy</artifactId>
-				<version>0.5.3</version>
-			</dependency>
-
-			<dependency>
-				<groupId>io.guise</groupId>
-				<artifactId>guise-tomcat</artifactId>
-				<version>0.5.3</version>
-			</dependency>
-
-			<dependency>
-				<groupId>io.urf</groupId>
-				<artifactId>config-file-format-turf-provider</artifactId>
-				<version>${urf.version}</version>
-			</dependency>
-
-			<dependency>
-				<groupId>io.urf</groupId>
-				<artifactId>urf-model</artifactId>
-				<version>${urf.version}</version>
+				<version>0.6.0-SNAPSHOT</version>
 			</dependency>
 
 			<dependency>
@@ -224,50 +160,6 @@
 				<groupId>io.urf</groupId>
 				<artifactId>urf-vocab-content</artifactId>
 				<version>${urf.version}</version>
-			</dependency>
-
-			<dependency>
-				<groupId>org.snakeyaml</groupId>
-				<artifactId>snakeyaml-engine</artifactId>
-				<version>2.1</version>
-			</dependency>
-
-			<dependency>
-				<groupId>org.apache.commons</groupId>
-				<artifactId>commons-imaging</artifactId>
-				<version>1.0-alpha2</version>
-			</dependency>
-
-			<dependency>
-				<groupId>org.apache.commons</groupId>
-				<artifactId>commons-jexl3</artifactId>
-				<version>3.1</version>
-			</dependency>
-
-			<dependency>
-				<groupId>org.apache.tomcat.embed</groupId>
-				<artifactId>tomcat-embed-core</artifactId>
-				<version>10.1.1</version>
-			</dependency>
-
-			<dependency>
-				<groupId>biz.aQute.bnd</groupId>
-				<artifactId>biz.aQute.bnd.annotation</artifactId>
-				<version>6.3.1</version>
-			</dependency>
-
-			<dependency>
-				<groupId>org.osgi</groupId>
-				<artifactId>osgi.annotation</artifactId>
-				<version>8.1.0</version>
-			</dependency>
-
-			<dependency>
-				<groupId>software.amazon.awssdk</groupId>
-				<artifactId>bom</artifactId>
-				<version>2.17.24</version>
-				<type>pom</type>
-				<scope>import</scope>
 			</dependency>
 		</dependencies>
 	</dependencyManagement>
